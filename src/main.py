@@ -33,6 +33,7 @@ class GotoHell:
             except Exception as e:
                 pass
             
+
             loop = -1
             for i in arguments:
                 loop += 1
@@ -44,6 +45,7 @@ class GotoHell:
                         arr += [ord(i)]
                     arguments[loop] = sum(arr)
 
+                arguments[loop] = str(arguments[loop])
                 if "!" in arguments[loop]:
                     arguments[loop] = arguments[loop].replace("!", str(self.cells[self.pos]))
                 if "?" in arguments[loop]:

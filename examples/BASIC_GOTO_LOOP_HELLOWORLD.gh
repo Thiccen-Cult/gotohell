@@ -1,0 +1,2 @@
+#0 SET 1, 32. PRINT Hello, world. ASCIIOF 1. GOTO 1.
+#1 GOTO 0.
